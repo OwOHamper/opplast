@@ -26,8 +26,8 @@ class Upload:
         debug: bool = True,
         options: FirefoxOptions = webdriver.FirefoxOptions(),
     ) -> None:
-        if isinstance(profile, str):
-            profile = webdriver.FirefoxProfile(profile)
+        # if isinstance(profile, str):
+            # profile = webdriver.FirefoxProfile(profile)
 
         options.headless = headless
 
