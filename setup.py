@@ -15,14 +15,14 @@ with open("opplast/__init__.py") as f:
 setup(
     name="opplast",
     version=version,
-    author="offish",
-    author_email="overutilization@gmail.com",
+    author="OwOHamper",
+    author_email="barca.teo@gmail.com",
     description="Upload videos to YouTube using geckodriver, Firefox profiles and Selenium.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
-    url="https://github.com/offish/opplast",
-    download_url="https://github.com/offish/opplast/tarball/v" + version,
+    url="https://github.com/OwOHamper/opplast",
+    download_url="https://github.com/OwOHamper/opplast/tarball/v" + version,
     packages=["opplast"],
     classifiers=[
         "Programming Language :: Python :: 3",
