@@ -13,7 +13,7 @@ with open("opplast/__init__.py") as f:
 
 
 setup(
-    name="opplast",
+    name="opplast-v2",
     version=version,
     author="OwOHamper",
     author_email="barca.teo@gmail.com",

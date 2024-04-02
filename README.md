@@ -1,3 +1,6 @@
+UPDATED WITH NEW CONSTANTS
+
+
 # opplast
 [![Version](https://img.shields.io/pypi/v/opplast.svg)](https://pypi.org/project/opplast)
 [![License](https://img.shields.io/github/license/offish/opplast.svg)](https://github.com/offish/opplast/blob/master/LICENSE)

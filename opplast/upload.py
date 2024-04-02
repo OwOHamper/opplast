@@ -10,6 +10,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions, FirefoxProfile
 
+from selenium.webdriver.firefox.options import Options
+import os
 
 def get_path(file_path: str) -> str:
     # no clue why, but this character gets added for me when running
@@ -30,10 +32,21 @@ class Upload:
             # profile = webdriver.FirefoxProfile(profile)
 
         options.headless = headless
-
-        self.driver = webdriver.Firefox(
-            firefox_profile=profile, options=options, executable_path=executable_path
-        )
+        if os.name == 'nt':
+            self.driver = webdriver.Firefox(
+                firefox_profile=profile, options=options, executable_path=executable_path
+            )
+        else:
+            options = Options()
+            
+            options.add_argument("-profile")
+            options.add_argument(profile)
+            print(profile)
+            options.add_argument("--headless")
+    
+            self.driver = webdriver.Firefox(
+                options=options, 
+            )
         self.timeout = timeout
         self.log = Log(debug)
 
